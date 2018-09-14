@@ -33,7 +33,7 @@
         <action
             android:id="@+id/action_third_to_first"
             app:destination="@id/firstFragment" />
-    </fragment>
 
+    </fragment>
 
 </navigation>
