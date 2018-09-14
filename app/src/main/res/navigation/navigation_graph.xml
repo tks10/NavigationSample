@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_first" >
         <action
             android:id="@+id/action_first_to_second"
-            app:enterAnim="@anim/slide_from_left"
+            app:enterAnim="@anim/slide_from_right"
             app:exitAnim="@anim/slide_to_left"
             app:destination="@id/secondFragment" />
     </fragment>
@@ -34,7 +34,7 @@
         tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_third_to_first"
-            app:enterAnim="@anim/slide_from_right"
+            app:enterAnim="@anim/slide_from_left"
             app:exitAnim="@anim/slide_to_right"
             app:destination="@id/firstFragment" />
 
