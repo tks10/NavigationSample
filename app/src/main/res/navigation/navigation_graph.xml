@@ -12,6 +12,7 @@
         tools:layout="@layout/fragment_first" >
         <action
             android:id="@+id/action_first_to_second"
+            app:enterAnim="@anim/slide_in_left"
             app:destination="@id/secondFragment" />
     </fragment>
 
