@@ -8,8 +8,32 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.takashi.navigationsample.FirstFragment"
-        android:label="fragment_blank"
-        tools:layout="@layout/fragment_first" />
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_first_to_second"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.takashi.navigationsample.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_second_to_third"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.takashi.navigationsample.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_third_to_first"
+            app:destination="@id/firstFragment" />
+    </fragment>
 
 
 </navigation>
