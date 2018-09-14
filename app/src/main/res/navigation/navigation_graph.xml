@@ -24,6 +24,8 @@
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_second_to_third"
+            app:enterAnim="@anim/slide_from_bottom"
+            app:exitAnim="@anim/slide_to_top"
             app:destination="@id/thirdFragment" />
     </fragment>
 
@@ -37,7 +39,6 @@
             app:enterAnim="@anim/slide_from_left"
             app:exitAnim="@anim/slide_to_right"
             app:destination="@id/firstFragment" />
-
     </fragment>
 
 </navigation>
