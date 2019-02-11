@@ -14,6 +14,7 @@ class ThirdFragment : Fragment() {
 
         view.button?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_third_to_first)
+            // Navigation.findNavController(it).popBackStack(R.id.firstFragment, false)
         }
         return view
     }
